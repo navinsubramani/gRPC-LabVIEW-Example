@@ -1,2 +1,2 @@
 # gRPC-LabVIEW-Example
-This repository contains the list of examples to demonstrate the gRPC LabVIEW capability.
+This repository contains the examples to demonstrate the gRPC LabVIEW capability and gRPC use cases. It is initially made for the GLA summit 2021.
