@@ -5,3 +5,9 @@ This repository contains the examples to demonstrate the gRPC LabVIEW capability
 LabVIEW 2019 64-bit or later
 
 gRPC LabVIEW support from : https://github.com/ni/grpc-labview
+
+BloomRPC is a good client tool to control the service using the proto file: https://github.com/bloomrpc/bloomrpc/releases
+
+# Example 1 : Noise Waveform and PS Density
+
+This example program demonstrates how a simple LabVIEW service can be controlled by a LabVIEW client and python client (and BloomRPC) in parallel.
