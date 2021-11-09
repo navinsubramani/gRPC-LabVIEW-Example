@@ -4,7 +4,7 @@ This repository contains the examples to demonstrate the gRPC LabVIEW capability
 # Software Requirement
 LabVIEW 2019 64-bit or later
 
-gRPC LabVIEW support from : https://github.com/ni/grpc-labview
+gRPC LabVIEW support from : https://github.com/ni/grpc-labview/releases
 
 BloomRPC is a good client tool to control the service using the proto file: https://github.com/bloomrpc/bloomrpc/releases
 
