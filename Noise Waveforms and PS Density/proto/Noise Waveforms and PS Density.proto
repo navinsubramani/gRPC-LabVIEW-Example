@@ -1,0 +1,39 @@
+syntax = "proto3";
+package example;
+
+service SignalGeneratorService {
+	rpc ApplySignalParameters(SignalParameters) returns (noData);
+	rpc ApplyNoiseParameters(NoiseParameters) returns (noData);
+	rpc GenerateSignal(noData) returns (SignalData);
+	rpc GetAnalyzedParameters(noData) returns (AnalyzedResults);
+}
+
+message SamplingInfo {
+	int32 number_of_samples = 1;
+	float sample_rate = 2;
+}
+
+message SignalParameters {
+	SamplingInfo sampling_info = 1;
+	float frequency = 2;
+	float amplitude = 3;
+}
+
+message noData {
+	string response = 1;
+}
+
+message NoiseParameters {
+	SamplingInfo sampling_info = 1;
+	float noiseamplitude = 2;
+	int32 noisetype = 3;
+}
+
+message SignalData {
+	repeated float samples =1;
+}
+
+message AnalyzedResults {
+	float sinad = 1;
+	float THD_plus_noise = 2;
+}
