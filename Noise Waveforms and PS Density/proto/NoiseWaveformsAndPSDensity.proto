@@ -1,3 +1,6 @@
+
+// This proto file didn't follow the proto standard style guide
+
 syntax = "proto3";
 package example;
 
